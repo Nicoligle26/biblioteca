@@ -1,0 +1,13 @@
+<% if @authors.blank? %>
+<p>There are not any authors currently in the system.</p>
+<% else %>
+<p>These are the current authors in our system</p>
+
+<ul id = "authors">
+   <% @authors.each do |c| %>
+      <li><%= link_to c.name, {:action => 'show', :id => c.id} -%></li>
+   <% end %>
+</ul>
+
+<% end %>
+<p><%= link_to "Add new author", {:action => 'new' }%></p>

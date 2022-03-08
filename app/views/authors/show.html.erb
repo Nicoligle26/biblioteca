@@ -1,0 +1,10 @@
+<h1><%= @author.name %></h1>
+
+<p>
+   <strong>Nationality:</strong> <%= @author.nationality %><br />
+   <strong>Created Date:</strong> <%= @author.created_at %><br />
+</p>
+
+<hr />
+
+<%= link_to 'Back', {:action => 'index'} %>
