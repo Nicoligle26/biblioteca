@@ -1,0 +1,10 @@
+<h1><%= @book.image %></h1>
+
+<p>
+   <strong>Nationality:</strong> <%= @book.nationality %><br />
+   <strong>Created Date:</strong> <%= @book.created_at %><br />
+</p>
+
+<hr />
+
+<%= link_to 'Back', {:action => 'index'} %>
