@@ -1,16 +1,17 @@
 
-<div style="background-color: white">
-<image src="<%= @book.image %>">
-<p>
-   <strong>Name:</strong> <%= @book.name %><br />
-   <strong>Author:</strong> <%= @book.author.name %><br />
-   <strong>Editorial:</strong> <%= @book.gender.editorial.name %><br />
-   <strong>Gender:</strong> <%= @book.gender.name %><br />
-</p>
+<div>
+   <image src="<%= @book.image %>">
+   <p>
+      <strong>Name:</strong> <%= @book.name %><br />
+      <strong>Author:</strong> <%= @book.author.name %><br />
+      <strong>Editorial:</strong> <%= @book.gender.editorial.name %><br />
+      <strong>Gender:</strong> <%= @book.gender.name %><br />
+   </p>
 
-<p>
-    <%= @book.review %>
-</p>
+   <p>
+      <h2><strong>Review</strong></h2>
+      <%= @book.review %>
+   </p>
 </div>
 
 <hr />
