@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: 'books#index'
 
   #routes authors
-  get 'auhors/index'
+  get 'authors/index'
   get 'authors/show'
   get 'authors/new'
   post 'authors/create'

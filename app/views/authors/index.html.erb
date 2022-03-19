@@ -7,7 +7,7 @@
    <% @authors.each do |c| %>
       <li><%= link_to c.name, {:action => 'show', :id => c.id} -%></li>
    <% end %>
-</ul>
+</ul> 
 
 <% end %>
 <p><%= link_to "Add new author", {:action => 'new' }%></p>

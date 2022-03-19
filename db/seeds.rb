@@ -36,7 +36,7 @@ books = [
     aunque también algunos temibles enemigos. Pero sobre todo, conocerá los secretos que le permitirán cumplir con su
     destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago!',
     languaje: 'Español', number_pages: '256', author_id: 1, gender_id: 1,
-    image: 'https://static.wikia.nocookie.net/esharrypotter/images/d/db/HP1_portada_espa%C3%B1ol_de_bolsillo_2020.jpg/revision/latest?cb=20200606233250' },
+    image: 'https://images.cdn2.buscalibre.com/fit-in/360x360/e6/5f/e65f54742ad7bbc41903d17f75b77d78.jpg' },
   { id: 2, name: 'Buenos Dias, Princesa!', price: '$29.000',
     review: 'Han pasado algo más de dos años en la vida de los chicos que forman “el club de los incomprendidos”.
     Las cosas han cambiado desde que uno tras otro se fueron encontrando en el camino. Nuevos problemas, secretos,
@@ -48,7 +48,7 @@ books = [
     piensan. Son seis chicos que sienten, sufren, aman, creen, ríen, evolucionan... como otros chicos de su edad. Pero
     los seis son especiales. Al menos, para el resto del grupo.¿Conseguirán superar  todas las pruebas que se le van
     a presentar?Sólo puedes averiguarlo leyendo, ¡Buenos días, princesa!',
-    languaje: 'Español', number_pages: '544', image: 'https://images.cdn3.buscalibre.com/fit-in/360x360/f9/8f/f98f8da76bc4cca0b2521423d522f9bd.jpg',
+    languaje: 'Español', number_pages: '544', image: 'https://images.cdn1.buscalibre.com/fit-in/360x360/0b/09/0b09bdb6ed7b5dc29dd3d9a0a3402e83.jpg',
     author_id: 2, gender_id: 2 },
   { id: 3, name: 'La Vida Entre mis Dedos', price: '$55.920',
     review: 'Un libro que te hará sentir mientras exploras dentro de ti. Un libro que tocará tus emociones mientras

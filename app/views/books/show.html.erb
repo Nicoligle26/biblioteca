@@ -1,9 +1,17 @@
-<h1><%= @book.image %></h1>
+
+<div style="background-color: white">
+<image src="<%= @book.image %>">
+<p>
+   <strong>Name:</strong> <%= @book.name %><br />
+   <strong>Author:</strong> <%= @book.author.name %><br />
+   <strong>Editorial:</strong> <%= @book.gender.editorial.name %><br />
+   <strong>Gender:</strong> <%= @book.gender.name %><br />
+</p>
 
 <p>
-   <strong>Nationality:</strong> <%= @book.nationality %><br />
-   <strong>Created Date:</strong> <%= @book.created_at %><br />
+    <%= @book.review %>
 </p>
+</div>
 
 <hr />
 
