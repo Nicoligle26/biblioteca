@@ -15,7 +15,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
-
+    puts @book
     if @book.valid?
       @book.save
     else
@@ -26,6 +26,6 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit(:name, :review, :price, :languaje, :number_pages, :author_id, :gender_id)
+    params.require(:book).permit(:name, :review, :price, :languaje, :number_pages, :image, :author_id, :gender_id)
   end
 end

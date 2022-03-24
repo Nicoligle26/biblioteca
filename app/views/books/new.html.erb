@@ -17,13 +17,13 @@
 <%= text_field 'book', 'image' %></p>
 
 <p><label for = "book_author_id">Author</label>:
-<%= select_tag 'book', 'author_id' %></p>
+<%= select_tag 'book[author_id]', options_for_select(Author.all.collect{ |u| [u.name, u.id] }) %></p>
 
 <p><label for = "book_gender_id">Gender</label>:
-<%= select_tag 'book', 'gender_id' %></p>
+<%= select_tag 'book[gender_id]', options_for_select(Gender.all.collect{ |u| [u.name, u.id] }) %></p>
 
 <p><label for = "book_review">Review</label></p>
-<%= text_area 'book_review', 'review' %>
+<%= text_area 'book', 'review' %>
 
 <br>
 <%= submit_tag "Create" %>
