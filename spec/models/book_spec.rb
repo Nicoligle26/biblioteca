@@ -10,7 +10,6 @@
 #  price        :decimal(, )
 #  languaje     :string
 #  number_pages :integer
-#  image        :text
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #  author_id    :bigint
@@ -26,5 +25,8 @@ RSpec.describe Book, type: :model do
 
   describe 'validations' do
     it { should validate_presence_of(:name) }
+    it { should validate_presence_of(:price) }
+    it { should validate_presence_of(:languaje) }
+    it { should validate_presence_of(:review) }
   end
 end

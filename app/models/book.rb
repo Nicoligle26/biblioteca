@@ -10,7 +10,6 @@
 #  price        :decimal(, )
 #  languaje     :string
 #  number_pages :integer
-#  image        :text
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #  author_id    :bigint
@@ -20,5 +19,5 @@ class Book < ApplicationRecord
   belongs_to :author
   belongs_to :gender
 
-  validates :name, presence: true
+  validates :name, :review, :price, :languaje, presence: true
 end
