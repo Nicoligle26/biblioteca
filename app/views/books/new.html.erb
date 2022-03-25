@@ -1,0 +1,32 @@
+<h1>Create a book</h1>
+
+<%= form_tag :action => 'create' do %>
+<p><label for = "book_name">Name</label>:
+<%= text_field 'book', 'name' %></p>
+
+<p><label for = "book_price">Price</label>:
+<%= text_field 'book', 'price' %></p>
+
+<p><label for = "book_languaje">Languaje</label>:
+<%= text_field 'book', 'languaje' %></p>
+
+<p><label for = "book_number_pages">Number of pages</label>:
+<%= text_field 'book', 'number_pages' %></p>
+
+<p><label for = "book_image">Image</label>:
+<%= text_field 'book', 'image' %></p>
+
+<p><label for = "book_author_id">Author</label>:
+<%= select_tag 'book[author_id]', options_for_select(Author.all.collect{ |u| [u.name, u.id] }) %></p>
+
+<p><label for = "book_gender_id">Gender</label>:
+<%= select_tag 'book[gender_id]', options_for_select(Gender.all.collect{ |u| [u.name, u.id] }) %></p>
+
+<p><label for = "book_review">Review</label></p>
+<%= text_area 'book', 'review' %>
+
+<br>
+<%= submit_tag "Create" %>
+
+<% end -%>
+<%= link_to 'Back', {:action => 'index'} %>
