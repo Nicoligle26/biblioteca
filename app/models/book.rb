@@ -20,5 +20,5 @@ class Book < ApplicationRecord
   belongs_to :author
   belongs_to :gender
 
-  validates :name, presence: true
+  validates :name, :price, :languaje, :image, presence: true
 end

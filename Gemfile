@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.2'
+ruby '3.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.6'
@@ -51,7 +51,8 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+# gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
 # https://rubygems.org/gems/annotate
 gem 'annotate', '~> 3.2'
 # https://rubygems.org/gems/rubocop
@@ -72,3 +73,5 @@ gem 'letter_opener', '~> 1.7'
 gem 'bootstrap', '~> 5.1.3'
 # https://rubygems.org/gems/sass-rails
 gem 'sass-rails', '~> 6.0'
+gem 'net-smtp', require: false
+gem 'tzinfo-data'
