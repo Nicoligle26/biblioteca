@@ -7,7 +7,7 @@
 User.create!(name: 'juan', email: 'juan@example.com', password: 'Tacos123!', password_confirmation: 'Tacos123!',
              confirmed_at: Date.today, role: 'admin')
 
-# Seed              
+# Seed
 editorials = [
   { name: 'Salamandra', city: 'España', pages: 'https://www.penguinlibros.com/es' },
   { name: 'Planeta', city: 'España',
