@@ -18,9 +18,29 @@ class BooksController < ApplicationController
     puts @book
     if @book.valid?
       @book.save
+      redirect_to root_path
     else
-      render :new, status: :unprocessable_entity
+      flash[:errors] = @book.errors.full_messages
+      redirect_to new_book_path
     end
+  end
+
+  def update
+    @book = Book.find(params[:id])
+    if @book.update(book_params)
+      flash[:success] = "The book successfully updated!"
+      redirect_to book_url(@book)
+    else
+      flash.now[:error] = "Book item update failed"
+      render :edit
+    end
+  end
+
+  def destroy
+    @book = Book.find(params[:id])
+    @book.destroy
+
+    redirect_to books_path
   end
 
   private

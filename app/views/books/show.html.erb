@@ -1,20 +1,61 @@
+<div class='content'>
+   <div class="content__cover">
+      <div class="content__cover-image">
+         <image src="<%= @book.image %>">
+      </div>
+   </div>
 
-<div>
-   <image src="<%= @book.image %>">
-   <p>
-      <strong>Name:</strong> <%= @book.name %><br />
-      <strong>Author:</strong> <%= @book.author.name %><br />
-      <strong>Editorial:</strong> <%= @book.gender.editorial.name %><br />
-      <strong>Gender:</strong> <%= @book.gender.name %><br />
-      <strong>Price:</strong> <%= @book.price %><br />
-   </p>
+   <div class="content__info">
+      <div class="content__table">
+         <div class="content__table-item">
+            <h4>Name:</h4>
+            <p>
+               <%= @book.name %>
+            </p>
+         </div>
 
-   <p>
-      <h2><strong>Review</strong></h2>
-      <%= @book.review %>
-   </p>
+         <div class="content__table-item">
+            <h4>Author:</h4>
+            <p>
+               <%= @book.author.name %>
+            </p>
+         </div>
+
+         <div class="content__table-item">
+            <h4>Editorial:</h4>
+            <p>
+               <%= @book.gender.editorial.name %>
+            </p>
+         </div>
+
+         <div class="content__table-item">
+            <h4>Gender:</h4>
+            <p>
+               <%= @book.gender.name %>
+            </p>
+         </div>
+
+         <div class="content__table-item">
+            <h4>Price:</h4>
+            <p>
+               <%= @book.price %>
+            </p>
+         </div>
+
+         <div class="content__table-item--desc">
+            <h4>Review</h4>
+            <p>
+               <%= @book.review %>
+            </p>
+         </div>
+      </div>
+
+   </div>
 </div>
 
 <hr />
-
-<%= link_to 'Back', {:action => 'index'} %>
+<%= link_to 'Back' , {:action=> 'index'} %>
+  <%= link_to "Destroy Book", @book.id, data: {
+                turbo_method: :delete,
+                turbo_confirm: "Are you sure?"
+              } %>

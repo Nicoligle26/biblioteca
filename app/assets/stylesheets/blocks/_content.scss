@@ -1,0 +1,49 @@
+.content {
+    width: 100%;
+    min-height: 91.5vh;
+
+    &__cover {
+        height: 50%;
+
+        &-image {
+            height: 45.75vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+
+            img {
+                height: 100%;
+                -webkit-box-shadow: -9px 5px 6px 4px rgba(0, 0, 0, 0.2);
+                box-shadow: -9px 5px 6px 4px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    &__info {
+        min-height: 45.75vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 2rem;
+    }
+
+    &__table {
+        font-size: 1.4em;
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            width: 25rem;
+
+            &--desc {
+                h4 {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}
